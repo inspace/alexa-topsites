@@ -3,7 +3,7 @@
 This script does not use the official [Alexa API](http://docs.aws.amazon.com/AlexaTopSites/latest/) but is a page scraper. Anyone looking for a robust solution should use the official API since all page scrapers are fragile to page changes.
 
 ###Requirements
-The [Requests](http://http://docs.python-requests.org/) and [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) libraries are required.
+The [Requests](http://docs.python-requests.org/) and [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) libraries are required.
 
 ###Usage
 ```python
