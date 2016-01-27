@@ -25,6 +25,7 @@ if __name__ == '__main__':
         bullets = soup.find_all('li', {'class':'site-listing'})
     
         for bullet in bullets:
-            rank = bullet.div.contents[0]
-            site = bullet.h2.a.contents[0]
+            items = bullet.find_all('div')
+            rank = items[0].get_text().strip()
+            site = items[1].p.get_text().strip()
             print('%s%s%s' % (rank, delimiter, site))
